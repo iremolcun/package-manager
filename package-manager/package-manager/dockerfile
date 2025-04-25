@@ -1,0 +1,11 @@
+# Java 17 imajını temel al
+FROM openjdk:17-jdk-slim
+
+# Çalışma dizinini oluştur
+WORKDIR /app
+
+# Derlenmiş .jar dosyasını konteynıra kopyala
+COPY target/package-manager-0.0.1-SNAPSHOT.jar /app/package-manager.jar
+
+# Uygulamayı çalıştırma komutu
+CMD ["java", "-jar", "package-manager.jar"]

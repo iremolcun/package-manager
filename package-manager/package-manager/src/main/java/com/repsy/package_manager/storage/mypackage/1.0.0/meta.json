@@ -1,0 +1,9 @@
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "author": "John Doe",
+  "dependencies": [
+    { "packageName": "even", "version": "3.4.7" },
+    { "packageName": "math", "version": "4.2.8" }
+  ]
+}
